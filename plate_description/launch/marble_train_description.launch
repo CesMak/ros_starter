@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<launch>
+  <arg name="plate_name" default="my_plate" />
+  
+  <!-- Load the ball:-->
+  <param name="robot_description" command="$(find xacro)/xacro --inorder '$(find plate_description)/urdf/plate.xacro'
+  robot_name:=$(arg plate_name)
+  "
+  />
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find plate_description)/config/plate_state_visualize.rviz" required="true" />
+</launch>

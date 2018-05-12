@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+   <gazebo reference="plate_link">
+     <static>1</static>
+      <gravity>1</gravity>
+      <maxVel>0.01</maxVel>
+      <minDepth>0</minDepth>
+      <mu1>0.25</mu1>
+      <mu2>0.25</mu2>
+      <fdir1>0 0 0</fdir1>
+      <kp>1e+13</kp>
+      <kd>1.0</kd>
+      <selfCollide>0</selfCollide>
+      <maxContacts>10</maxContacts>
+
+<!-- choose different color for the plate:
+<visual>
+  <material>
+    <ambient>0.19225 0.19225 0.19225 1.0</ambient>
+    <diffuse>0.50754 0.50754 0.50754 1.0</diffuse>
+    <specular>0.508273 0.508273 0.508273 1.0</specular>
+    <emissive>0.0 0.0 0.0 0.0</emissive>
+  </material>
+</visual> -->
+   </gazebo>
+
+</robot>

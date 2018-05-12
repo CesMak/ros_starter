@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="$(arg robot_name)">
+
+    <xacro:include filename="$(find plate_description)/urdf/plate.urdf.xacro" />
+    <xacro:plate_macro prefix=""/>
+
+</robot>
