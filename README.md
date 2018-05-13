@@ -7,7 +7,7 @@ Simply download the .sh file and call it:
 roscd marble_description
 
 ## Launch and start it in rviz:
-roslaunch marble_description marble_load.launch
+roslaunch marble_description marble_description.launch
 
 ## The easy_start_ros.bash script does the following:
 	description_name=$1
