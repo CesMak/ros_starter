@@ -44,8 +44,11 @@ meshesdircoll = inbasedir+"/meshes/collision"
 visual_files = os.listdir(meshesdirvis)
 coll_files = os.listdir(meshesdircoll)
 
-os.rename(meshesdirvis+"/"+visual_files[0], meshesdirvis+"/"+new_name+"_visual.stl")
-os.rename(meshesdircoll+"/"+coll_files[0], meshesdircoll+"/"+new_name+"_collision.stl")
+visualdd = [s for s in visual_files if "_visual" in s]
+colldd = [s for s in coll_files if "_collision" in s]
+
+os.rename(meshesdirvis+"/"+visualdd[0], meshesdirvis+"/"+new_name+"_visual.stl")
+os.rename(meshesdircoll+"/"+colldd[0], meshesdircoll+"/"+new_name+"_collision.stl")
 
 
 urdfdir = inbasedir+"/urdf"
