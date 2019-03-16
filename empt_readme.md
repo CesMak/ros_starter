@@ -9,6 +9,8 @@ This package has been tested under ROS Kinetic and Ubuntu 16.04. This is researc
 **Author: Markus Lamprecht<br />
 Maintainer: Markus Lamprecht, 2f4yor@gmail.com<br />**
 
+<img alt="alfons" src="data/alfons.png" width="700">
+
 ## Installation
 
 ### Dependencies
@@ -23,17 +25,19 @@ This software is built on the Robotic Operating System ([ROS]), which needs to b
 In order to install this package, clone the latest version from this repository into your catkin workspace and compile the package using [catkin_tools](https://catkin-tools.readthedocs.io/en/latest/)
 
     cd catkin_workspace/src
-    git clone https://github.com/anybotics/elevation_mapping.git
-    cd ../
+    git clone git@github.com:CesMak/alfons_robot_bringup.git
+    cd ..
     catkin init
     catkin build
 
 
 ## Basic Usage
 
-### Main Launch file
+## Main Launch file
 
-### 
+``` 
+
+``` 
 
 ## Nodes
 
@@ -69,9 +73,17 @@ description
 
     The name of the distance measurements topic.
 
+
+## License BSD
+If you want to use this package please contact: [me](https://simact.de/about_me).
+
 ## Bugs & Feature Requests
 
 Please report bugs and request features using the Issue Tracker
+
+
+## TODO's
+
 
 
 [ROS]: http://www.ros.org
